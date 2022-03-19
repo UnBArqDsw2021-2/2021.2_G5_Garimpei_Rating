@@ -11,12 +11,12 @@ export class RatingController {
         return this.ratingService.findAll();
     }
 
-    @Get('made_by_user/:user_id')
+    @Get('user/:user_id')
     findRatingsMadeByUser(@Param('user_id') userId: number) {
         return this.ratingService.findRatingsMadeByUser(userId);
     }
 
-    @Get('given_to_item/:item_id')
+    @Get('item/:item_id')
     findItemRatings(@Param('item_id') itemId: number) {
         return this.ratingService.findItemRatings(itemId);
     }
