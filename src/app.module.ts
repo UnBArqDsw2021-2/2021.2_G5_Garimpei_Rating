@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { RatingModule } from './rating/rating.module';
 import configuration from './config/configuration';
+import { ReportModule } from './report/report.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import configuration from './config/configuration';
       }),
     }),
     RatingModule,
+    ReportModule,
   ],
   controllers: [AppController],
   providers: [AppService],
